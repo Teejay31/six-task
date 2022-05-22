@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-light {
+    background: lightgray !important;
+}
+
+.land-img {
+    background: url(../img/man1.webp) no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+}
+
+.awards, .tourist {
+    min-height: 100vh;
+    background: rgb(60, 60, 60);
+}
+
+.pictures {
+    min-height: 100vh;
+    background: #192320;
+}
+
