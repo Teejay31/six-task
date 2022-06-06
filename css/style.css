@@ -14,14 +14,27 @@
     background-position:center;
     height: 100vh;
 }
-
-.awards, .tourist {
-    min-height: 100vh;
-    background: rgb(60, 60, 60);
+ 
+.creatures {
+    width: 325px;
+    height: 360px;
+    padding-bottom: px;
 }
 
-.pictures {
-    min-height: 100vh;
-    background: #192320;
+.quote-img {
+    display: flex;
+    justify-content: center;
+}
+
+.gambling {
+    background-color: rgba(150, 10, 0, 0.1);
+    border-radius: 50%;
+}
+
+@media ( max-width: 769px) {
+    .years-of {
+        display: flex;
+        justify-content: center;
+    }
 }
 
