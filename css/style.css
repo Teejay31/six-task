@@ -1,11 +1,58 @@
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    bord: 1px solid red;
+}
+.bg-darky {
+    background: linear-gradient(360deg, rgb(3, 3, 3), rgb(229, 226, 226, 0.8)), url(../img/logo5.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.logo {
+    object-fit: cover;
+    border-radius: 30%;
+    height: 55px;
+    width: 55px;
+}
+
+.loggo {
+    object-fit: cover;
+    border-radius: 20%;
+    height: 75px;
+    width: 80px;
+}
+
+.bg-lig {
+    background: rgb(235, 234, 234);
 }
 
 .bg-light {
     background: lightgray !important;
+}
+
+.bg-abs {
+    background: orangered;
+    width: 80px;
+    border-radius: 7%;
+    position: absolute;
+    bottom: -12%;
+    left: 11%;
+}
+
+.abso {
+    position: absolute;
+}
+
+.fr-rel {
+    position: relative;
+}
+.justify {
+    text-align: justify;
 }
 
 .land-img {
@@ -30,10 +77,52 @@
     border-radius: 50%;
 }
 
+.column-card::before {
+    content: "";
+    background: rgba(36, 135, 206, 0.6);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    z-index: 2;
+    left: 30px;
+}
+
+.cc-text::after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    background: red;
+    z-index: 50;
+    display: block;
+}
+
+.for-rel {
+    position: relative;
+}
+
 @media ( max-width: 769px) {
     .years-of {
         display: flex;
         justify-content: center;
     }
+
+    .fr-pd {
+        padding-right: 0 !important;
+    }
 }
 
+
+@media ( max-width: 426px) {
+    .fr-pd {
+        padding-right: 0 !important;
+    }
+
+    .for-ft p{
+        font-size: 12px;
+    }
+
+}
