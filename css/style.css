@@ -27,6 +27,10 @@
     width: 80px;
 }
 
+.bg-blk {
+    background: rgb(20, 20, 20);
+}
+
 .bg-lig {
     background: rgb(235, 234, 234);
 }
@@ -77,10 +81,10 @@
 }
 
 .img-rec {
-    width: 38%;
+    width: 50%;
     height: 50vh;
     object-fit: cover;
-    border-radius: 12%;
+    border-radius: 2%;
 }
 
 @media ( max-width: 769px) {
