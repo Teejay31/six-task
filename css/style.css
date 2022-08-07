@@ -1,17 +1,18 @@
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    bord: 1px solid red;
 }
+
 .bg-darky {
-    background: linear-gradient(360deg, rgb(3, 3, 3), rgb(229, 226, 226, 0.8)), url(../img/logo5.png) no-repeat;
+    background: linear-gradient(360deg, rgb(75, 72, 72), rgba(80, 72, 72, 0.8)), url(../img/logo5.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
 
 .logo {
     object-fit: cover;
@@ -27,16 +28,16 @@
     width: 80px;
 }
 
-.bg-blk {
-    background: rgb(20, 20, 20);
-}
-
 .bg-lig {
     background: rgb(235, 234, 234);
 }
 
 .bg-light {
     background: lightgray !important;
+}
+
+.bg-rgb {
+    background: rgb(75, 72, 72);
 }
 
 .bg-abs {
@@ -48,13 +49,6 @@
     left: 11%;
 }
 
-.abso {
-    position: absolute;
-}
-
-.fr-rel {
-    position: relative;
-}
 .justify {
     text-align: justify;
 }
@@ -65,20 +59,6 @@
     background-position:center;
     height: 100vh;
 }
- 
-.creatures {
-    width: 325px;
-    height: 360px;
-}
-
-.quote-img {
-    display: flex;
-    justify-content: center;
-}
-
-.for-rel {
-    position: relative;
-}
 
 .img-rec {
     width: 50%;
@@ -87,12 +67,12 @@
     border-radius: 2%;
 }
 
-@media ( max-width: 769px) {
-    .years-of {
-        display: flex;
-        justify-content: center;
-    }
+.h-1 {
+    height: 60vh;
+    object-fit: cover;
+}
 
+@media ( max-width: 769px) {
     .fr-pd {
         padding-right: 0 !important;
     }
@@ -100,12 +80,16 @@
 
 
 @media ( max-width: 426px) {
+    .years-of {
+        justify-content: center;
+    }
+
     .fr-pd {
         padding-right: 0 !important;
     }
 
     .for-ft p{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .img-rec {

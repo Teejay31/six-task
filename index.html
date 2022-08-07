@@ -7,33 +7,36 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <title>Home</title>
 </head>
 <body>
     <section>
       <div class="bg-darky">
         <nav class="navbar navbar-expand-lg navbar-light mx-3 pt-3">
-          <div class="container-fluid text-white mb-4">
+          <div class="container-fluid">
               <div class="d-flex">
                   <img src="img/logo6.png" alt="logo" class="logo mt-2 me-2">
-                  <a class="navbar-brand text-black fs-5 fw-bold" href="#">Special <br> photograph</a>
+                  <a class="navbar-brand text-white fs-5 fw-bold" href="#">Special <br> photograph</a>
                 </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav m-auto mb-4 me-5 mb-lg-0">
+                  <ul class="navbar-nav m-auto mb-2 me-5 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active text-black pe-5 fw-bold" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active text-black pe-5 fw-bold" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active text-black pe-5 fw-bold" href="blog.html">Blog</a>
+                        <a class="nav-link text-white pe-5 fw-bold" href="blog.html">Blog</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active text-black pe-5 fw-bold" href="about.html">About Us</a>
+                        <a class="nav-link text-white pe-5 fw-bold" href="about.html">About Us</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active text-black pe-5 fw-bold" href="contact.html">Contact Us</a>
+                        <a class="nav-link text-white pe-5 fw-bold" href="contact.html">Contact Us</a>
+                      </li>
                       </li>
                   </ul>
                   <form class="d-flex">
@@ -46,18 +49,20 @@
       </div>
       <div class="bg-black text-white"> 
         <div class="land-img container">
-          <div class="p-5">
-            <h5 class="create text-danger fs-6"><i class="bi bi-dash-lg me-3"></i>CREATIVE PHOTOGRAPHY</h5>
-          </div>
-          <div>
-            <h1 class="fs-1 fw-bold text-white">PHOTOGRAPHY <br> MAKE US HAPPY <br> TAKE YOUR SHOT</h1>
-            <a class="btn btn-lg btn-danger" href="contact.html">Contact Now</a>
+          <div class="pt-5 ms-5">
+            <div class="py-5">
+              <h5 class="text-danger fw-bold fs-6"><i class="bi bi-dash-lg me-3"></i>CREATIVE PHOTOGRAPHY</h5>
+            </div>
+            <div>
+              <h4 class="fs-1 fw-bold text-white">PHOTOGRAPHY <br> MAKE US HAPPY <br> TAKE YOUR SHOT</h4>
+              <a class="btn btn-lg btn-danger" href="contact.html">Contact Now</a>
+            </div>
           </div>
         </div>
       </div>
       <div class="p-3 bg-dark text-white">
         <div class="container p-5">
-          <div class="row text-center text-sm-center text-md-center text-lg-start">
+          <div data-aos="flip-up" class="row text-center text-sm-center text-md-center text-lg-start">
             <div class="col-lg-6 col-md-6 col-12 text-white py-5">
               <h3 class="text-uppercase fs-1 pb-5 fw-bold">how we make <br> user experiences</h3>
               <a href="#" class="text-decoration-none text-danger py-3 fw-bold">hire@special.photo</a>
@@ -74,53 +79,34 @@
           </div>
         </div>
       </div>
-      <div class="p-3 bg-blk text-white">
-        <div class="container my-3">
-          <h1 class="fs-1 fw-bold text-light text-center"><em>RECENT REVIEWS</em></h1>
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="p-3 m-auto">
-                  <div class="text-center">
-                    <img src="img/a3.webp" alt="" class="img-fluid img-rec">
-                  </div>
-                  <div class="text-warning text-center pt-1">
-                    <h3 class="fw-bold">Creative Photography</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                  </div>
-                </div>
-              </div>              
-              <div class="carousel-item">
-                <div class="p-3 m-auto">
-                  <div class="text-center">
-                    <img src="img/a2.webp" alt="" class="img-fluid img-rec">
-                  </div>
-                  <div class="text-warning text-center pt-1">
-                    <h3 class="fw-bold">Wedding Photography</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                  </div>
+      <div class="p-3 bg-rgb text-white">
+        <div class="container-fluid my-3">
+          <h3 class="fs-1 fw-bold text-light mb-3 text-center"><em>RECENT REVIEWS</em></h3>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper mb-5">
+              <div class="swiper-slide">
+                <img src="img/xblog1.webp" alt="" class="img-fluid w-100 h-1">
+                <div class="text-white text-center pt-1">
+                  <h5 class="fw-bold">Creative Photography</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="p-3 m-auto">
-                  <div class="text-center">
-                    <img src="img/a1.webp" alt="" class="img-fluid img-rec">
-                  </div>
-                  <div class="text-warning text-center pt-1">
-                    <h3 class="fw-bold">Nature Photography</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                  </div>
-                </div>              
+              <div class="swiper-slide">
+                <img src="img/xblog2.webp" alt="" class="img-fluid w-100 h-1">
+                <div class="text-white text-center pt-1">
+                  <h3 class="fw-bold">Wedding Photography</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/xblog3.webp" alt="" class="img-fluid w-100 h-1">
+                <div class="text-white text-center pt-1">
+                  <h3 class="fw-bold">Nature Photography</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -132,7 +118,7 @@
           <div class="container pt-2">
             <div class="row text-center">
               <div class="col-lg-4 col-md-4 col-12 mb-2">
-                <img src="img/xblog3.webp" alt="" class="img-fluid">
+                <img src="img/xblog3.webp" alt="" class="img-fluid d-block w-100">
               </div>
               <div class="col-lg-4 col-md-4 col-12 mb-2">
                 <img src="img/xblog2.webp" alt="" class="img-fluid d-block w-100">
@@ -147,57 +133,43 @@
       <div class="p-3 bg-black text-white">
         <div class="container py-5">
           <div class="row text-center text-sm-center text-md-center text-lg-start">
-            <div class="col-lg-6 col-md-12 mb-3 text-white">
-              <h2 class="fs-1 font-weight-normal">TAKE A LOOK AT OUR ACHIVMENT</h2>
+            <div class="col-lg-4 col-md-12 mb-3 text-white">
+              <h3 class="fs-3 fw-normal">TAKE A LOOK AT OUR ACHIVMENT</h3>
               <p>Excepteur sint occaecat cupidatat. irure dolor in.</p>
-              <button class="btn btn-danger .btn-lg text-uppercase">Get start</button>
+              <a href="#" class="btn btn-danger text-uppercase">Get start</a>
             </div>
-            <div class="col-lg-3 col-md-4 mb-3">
-              <div class="btn btn-outline-dark py-4">
-                  <img src="img/xbrand1.webp" alt="" class="img-fluid">
-                  <h6 class="text-white py-1">BEHANCE AWARD PRIZE 2019</h6>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mb-3">
-              <div class="btn btn-outline-dark py-4">
-                  <img src="img/xbrand02.webp" alt="" class="img-fluid">
-                  <h6 class="text-white py-1">BEHANCE AWARD PRIZE 2019</h6>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mb-3">
-              <div class="btn btn-outline-dark py-4">
-                  <img src="img/xbrand3.webp" alt="" class="img-fluid">
-                  <h6 class="text-white py-1">BEHANCE AWARD PRIZE 2019</h6>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mb-3">
-              <div class="btn btn-outline-dark py-4">
-                  <img src="img/xbrand2.webp" alt="" class="img-fluid">
-                  <h6 class="text-white py-1">BEHANCE AWARD PRIZE 2019</h6>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mb-3">
-              <div class="btn btn-outline-dark py-4">
-                  <img src="img/xbrand02.webp" alt="" class="img-fluid">
-                  <h6 class="text-white py-1">BEHANCE AWARD PRIZE 2019</h6>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-              <div class="btn btn-outline-dark py-4">
-                  <img src="img/xbrand3.webp" alt="" class="img-fluid">
-                  <h6 class="text-white py-1">BEHANCE AWARD PRIZE 2019</h6>
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-12 mb-3" data-aos="zoom-in-down">
+                  <div class="btn btn-outline-dark py-4">
+                      <img src="img/xbrand1.webp" alt="" class="img-fluid">
+                      <h6 class="text-white py-1">BEHANCE AWARD PRIZE 2019</h6>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3" data-aos="zoom-in-down">
+                  <div class="btn btn-outline-dark py-4">
+                      <img src="img/xbrand02.webp" alt="" class="img-fluid">
+                      <h6 class="text-white py-1">BEHANCE AWARD PRIZE 2019</h6>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3" data-aos="zoom-in-down">
+                  <div class="btn btn-outline-dark py-4">
+                      <img src="img/xbrand3.webp" alt="" class="img-fluid">
+                      <h6 class="text-white py-1">BEHANCE AWARD PRIZE 2019</h6>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="p-3 bg-dark text-white">
-        <div class="for-quote container py-5">
+        <div data-aos="fade-right" class="container py-5">
           <div class="text-center"><i class="bi bi-quote"></i></div>
           <div>
             <h3 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga deserunt iste nostrum excepturi placeat soluta, inventore nisi dolor suscipit doloribus natus! Deserunt corporis itaque nulla, hic aspernatur at repellendus.</h3>
           </div>
-          <div class="quote-img d-flex">
+          <div class="d-flex justify-content-center">
             <img src="img/Homepage.webp" alt="" class="img-fluid pe-3">
             <div class="">
               <h4 class="text-primary fw-bold">Jessyna Lyn</h4>
@@ -206,23 +178,35 @@
           </div>
         </div>
       </div>
-      <div class="p-3 bg-black text-white">
-        <div class="tour container py-5">
+      <div class="bg-rgb">
+        <div class="tour container py-5"> 
           <div class="text-center text-white">
             <h4 class="fw-bold fs-1">TOURIST BLOG</h4>
             <p class="fw-bold fs-4">Our Recent Photos</p>
           </div>
-          <div class="pt-5">
-            <div class="row text-center">
-              <div class="col-lg-4 col-md-4 col-12 mb-2">
-                <img src="img/a3.webp" alt="" class="img-fluid">
+          <div class="pt-3">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper mb-5">
+                <div class="swiper-slide">
+                  <img src="img/a3.webp" alt="" class="img-fluid w-100 h-1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/a2.webp" alt="" class="img-fluid w-100 h-1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/a1.webp" alt="" class="img-fluid w-100 h-1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/xblog1.webp" alt="" class="img-fluid w-100 h-1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/xblog2.webp" alt="" class="img-fluid w-100 h-1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/xblog3.webp" alt="" class="img-fluid w-100 h-1">
+                </div>
               </div>
-              <div class="col-lg-4 col-md-4 col-12 mb-2">
-                <img src="img/a2.webp" alt="" class="img-fluid">
-              </div>
-              <div class="col-lg-4 col-md-4 col-12 mb-2">
-                <img src="img/a1.webp" alt="" class="img-fluid">
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -244,8 +228,8 @@
                   <div>
                     <ul class="list-unstyled">
                       <li><a href="#" class="text-white nav-link">Home</a></li>
-                      <li><a href="#" class="text-white nav-link">About</a></li>
-                      <li><a href="#" class="text-white nav-link">Contact</a></li>
+                      <li><a href="about.html" class="text-white nav-link">About</a></li>
+                      <li><a href="contact.html" class="text-white nav-link">Contact</a></li>
                     </ul>
                   </div>
                 </div>
@@ -278,16 +262,52 @@
               <p class="me-2 ">Copyright &copy; 2022 All rights reserved <i class="bi bi-distribute-horizontal text-danger"></i> This template is made by <em>Tijani Idris</em> </p>
             </div>
             <div class="d-flex ms-auto">
-              <p class="pe-4 text-danger fw-bold">Follow us <i class="bi bi-arrow-right-circle pe-1"></i></p>
-              <span><i class="bi bi-facebook  pe-3"></i></span>
-              <span class="px-2"><i class="bi bi-twitter pe-3"></i></span>
-              <span><i class="bi bi-instagram pe-3"></i></span>
+              <p class="pe-4 fw-bold">Follow us <i class="bi bi-arrow-right-circle pe-1"></i></p>
+              <a href="#"><i class="bi bi-facebook text-danger pe-3"></i></a>
+              <a href="#" class="px-2"><i class="bi bi-twitter text-danger pe-3"></i></a>
+              <a href="#"><i class="bi bi-instagram text-danger pe-3"></i></a>
             </div>
           </div>
         </div>
-      </div>
+    </div>
     </section>
 
-    <script src="js/bootstrap.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            426: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+        },
+      });
+    </script>
+
+
 </body>
 </html>
